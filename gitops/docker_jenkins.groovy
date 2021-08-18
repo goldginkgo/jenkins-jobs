@@ -1,10 +1,11 @@
-pipelineJob('gitops/docker-jenkins') {
+pipelineJob('gitops/aldi-jenkins') {
   definition {
     cpsScm {
       scm {
         git {
           remote {
-            url('https://github.com/goldginkgo/jenkins-docker.git')
+            url('http://560GHD11/aldi-gitops/aldi-jenkins.git')
+            credentials('gitlab_username_pass')
           }
           branch('*/master')
         }
