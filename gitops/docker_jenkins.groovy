@@ -4,8 +4,7 @@ pipelineJob('gitops/aldi-jenkins') {
       scm {
         git {
           remote {
-            url('http://560GHD11/aldi-gitops/aldi-jenkins.git')
-            credentials('gitlab_username_pass')
+            url('https://github.com/goldginkgo/jenkins-docker.git')
           }
           branch('*/master')
         }
