@@ -1,4 +1,4 @@
-pipelineJob('gitops/aldi-jenkins') {
+pipelineJob('gitops/docker-jenkins') {
   definition {
     cpsScm {
       scm {
